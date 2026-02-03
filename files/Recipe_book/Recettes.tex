@@ -1,0 +1,74 @@
+\documentclass[twosides, 11pt]{book} 
+%\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{cuisine}
+
+\definecolor{cream}{rgb}{1.0, 0.99, 0.82}
+
+\input{CoverPage.tex}
+\makeindex
+\begin{document}
+%\doublespacing
+%\input{Recipes/Sample}
+
+\maketitle
+\tableofcontents
+\pagecolor{white!70!cream}
+
+\chapter{Masa Madre}
+\begin{spacing}{2.0}
+La masa madre es mucho más que un simple ingrediente; es un organismo vivo, una danza de levaduras y bacterias salvajes que se entrelazan para crear panes de un sabor y textura inigualables. Cada burbuja que se forma en su fermentación es una historia de transformación, una prueba del poder de la naturaleza y la paciencia del panadero. A través de este capítulo, exploraremos el fascinante mundo de la masa madre, desde sus orígenes hasta las técnicas más avanzadas para crear panes artesanales que deleitarán hasta al paladar más exigente.
+\end{spacing}
+%
+%       PAN DE MASA MADRE
+%
+\input{Recipes/1-Masa Madre/1-PanMasaMadre}
+
+\chapter{La levadura al rescate}
+\begin{spacing}{2.0}
+La levadura, tanto en su forma comercial como en los prefermentos, es un ingrediente versátil que nos permite elaborar una amplia variedad de panes y masas fermentadas. En este capítulo, exploraremos las diferentes formas de utilizar la levadura para crear panes deliciosos y esponjosos. Desde recetas rápidas y sencillas con levadura comercial hasta preparaciones más elaboradas con biga o poolish, encontrarás todo lo que necesitas para convertirte en un experto panadero. \\
+\textbf{Nota:} Todas las recetas se describen usando levadura seca. Para sustituir por levadura fresca, triplica la cantidad. (\textit{Ejemplo:} \unit[1]{g} de levadura seca equivale a \unit[3]{g} de levadura fresca.)
+\end{spacing}
+%
+%       POOLISH
+%
+\input{Recipes/2-Levadura/1-Poolish}
+%
+%       BIGA
+%
+\input{Recipes/2-Levadura/2-Biga}
+%
+%       BRIOCHE
+%
+\input{Recipes/2-Levadura/3-PanBrioche}
+%
+%       MASA PIZZA
+%
+\input{Recipes/2-Levadura/4-MasaPizza}
+
+%\chapter{Poissons}
+%\input{Recipes/Bar-Four}
+%\input{Recipes/SaumonRachel}
+
+%\chapter{Viandes}
+%\input{Recipes/Carbonnade}
+%\input{Recipes/PastaRagu}
+%\chapter{Poissons}
+
+
+%\chapter{Desserts}
+
+%\AddToShipoutPictureBG{\includegraphics[width=\paperwidth,height=\paperheight]{carbo}}
+
+%{On peut préparer l'appareil à l'avance et mettre au congélateur. Dans ce cas, on cuira 10 minutes et on omettra le carré de chocolat}
+%\input{Recipes/TarteAuxPommes}
+%\input{Recipes/MousseChocolat}
+
+%\chapter{Pains}
+%\input{Recipes/Challa}
+
+
+
+\clearpage
+\printindex
+\end{document}

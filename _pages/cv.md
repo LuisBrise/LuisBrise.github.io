@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Physical Sciences, [PCF-UNAM](https://www.posgrado.fisica.unam.mx/), 2027 (expected)
+* M.S. in Physical Sciences, [PCF-UNAM](https://www.posgrado.fisica.unam.mx/), 2023
+* B.S. in Physics, [School of Science, UNAM](https://www.fciencias.unam.mx/), 2019
 
 Work experience
 ======
