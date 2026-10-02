@@ -1,0 +1,37 @@
+/* ==========================================================================
+   TENANGO PEACOCK MARK
+   Small recurring brand motif (adapted from a Tenango, Hidalgo embroidery
+   peacock design) used across the site's chrome: nav, page titles, footer.
+   Each instance is a self-contained image (a cream medallion behind the
+   navy/gold peacock) so it stays legible in both the light and dark themes.
+   ========================================================================== */
+
+.masthead__logo {
+  height: 1.7em;
+  width: 1.7em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.page__title {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    margin-right: 0.35em;
+    vertical-align: -0.05em;
+    background-image: url("/images/tenango-mark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tenango-footer-mark {
+  height: 1.4em;
+  width: 1.4em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}

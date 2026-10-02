@@ -1,5 +1,8 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "J. Luis Briseño-Gómez",
+	"short_name": "Briseño-Gómez",
+	"theme_color": "#F7F1E1",
+	"background_color": "#F7F1E1",
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",

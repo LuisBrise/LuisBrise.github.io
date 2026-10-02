@@ -1,0 +1,35 @@
+--- _pages/about.md
++++ _pages/about.md
+@@ -33,3 +33,32 @@ Through the AALD-PAEP-UNAM research visit grant, I spent time at the Materials T
+ ## Highlighted Projects
+ 
+ To explore my research and code in more detail, visit my [Portfolio](/portfolio/) section. My full publication record is on the [Publications](/publications/) page and on [Google Scholar]({{ site.author.googlescholar }}); talks and their locations are mapped on the [Talks](/talks/) page.
++
++<div class="tenango-signoff">
++  <img src="/images/tenango-mark-full.svg" alt="Peacock motif inspired by Tenango embroidery" width="52" height="54">
++  <span class="tenango-phrase" lang="otn">Hogä ehe, jamädi nixi pädi</span>
++</div>
++
++<style>
++.tenango-signoff {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  gap: 0.7em;
++  margin-top: 3em;
++  padding-top: 1.3em;
++  border-top: 1px solid #e4ddc9;
++}
++.tenango-signoff img {
++  width: 52px;
++  height: auto;
++  flex-shrink: 0;
++}
++.tenango-signoff .tenango-phrase {
++  font-style: italic;
++  font-size: 0.85em;
++  letter-spacing: 0.01em;
++  color: inherit;
++  opacity: 0.75;
++}
++</style>
