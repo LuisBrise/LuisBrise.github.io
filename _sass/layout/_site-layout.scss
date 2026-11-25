@@ -1,0 +1,175 @@
+/* ==========================================================================
+   SITE LAYOUT
+   Loaded after page/archive/sidebar. Places the profile panel and the content
+   in two real columns, so the panel can never run into the content, and lets
+   the content use more of a wide screen.
+   ========================================================================== */
+
+$site-max-width: 1440px;
+$profile-width: 260px;
+
+#main,
+.masthead__inner-wrap {
+  @include breakpoint($x-large) {
+    max-width: $site-max-width;
+  }
+}
+
+/* Desktop: two columns
+   ========================================================================== */
+
+@include breakpoint($large) {
+  #main:has(> .sidebar) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: clamp(1.5rem, 3vw, 3.5rem);
+
+    &::after {
+      display: none;
+    }
+
+    > .sidebar {
+      flex: 0 0 $profile-width;
+      float: none;
+      box-sizing: border-box;
+      width: $profile-width;
+      max-width: none;
+      margin: 0;
+      padding: 0 0.25rem 1rem 0 !important; // the menu script sets an inline padding-top
+      position: sticky;
+      top: calc(#{$masthead-height} + 1rem);
+      height: auto;
+      max-height: calc(100vh - #{$masthead-height} - 2rem);
+      overflow-x: hidden;
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+
+    > .archive,
+    > .page {
+      flex: 1 1 0;
+      min-width: 0;
+      float: none;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    > .page__related {
+      flex: 0 0 100%;
+      float: none;
+      box-sizing: border-box;
+      padding-left: calc(#{$profile-width} + clamp(1.5rem, 3vw, 3.5rem));
+    }
+
+    // keep running text at a comfortable line length
+    .page__content > p,
+    .page__content > ul,
+    .page__content > ol {
+      max-width: 58rem;
+    }
+  }
+
+  .sidebar .author__avatar img {
+    display: block;
+    width: 100%;
+    max-width: 190px;
+  }
+}
+
+.sidebar .author__name,
+.sidebar .author__bio {
+  overflow-wrap: break-word;
+}
+
+/* Phone and tablet: photo beside name, links under the name
+   ========================================================================== */
+
+@media (max-width: #{$large - 1px}) {
+  .sidebar {
+    position: relative;
+    z-index: 5; // the Follow menu opens over the content
+    margin-top: 0;
+
+    > [itemscope] {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      column-gap: 1.1rem;
+      align-items: center;
+    }
+
+    div.author__avatar {
+      display: block;
+      grid-row: 1 / span 2;
+      width: clamp(104px, 30vw, 150px);
+    }
+
+    img.author__avatar {
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid var(--global-border-color);
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    .author__content {
+      display: block;
+      align-self: end;
+      padding: 0;
+      line-height: 1.35;
+    }
+
+    .author__name {
+      font-size: 1.2em;
+      line-height: 1.2;
+    }
+
+    p.author__pronouns,
+    p.author__bio {
+      font-size: 0.9em;
+      line-height: 1.35;
+      margin: 0.15rem 0 0;
+    }
+
+    .author__urls-wrapper {
+      display: block;
+      align-self: start;
+      justify-self: start;
+      margin-top: 0.5rem;
+
+      button {
+        color: var(--global-text-color) !important;
+        border-color: var(--global-text-color-light) !important;
+      }
+    }
+
+    .author__urls {
+      left: 0;
+      right: auto;
+
+      &::before,
+      &::after {
+        left: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Talk map
+   ========================================================================== */
+
+.talkmap-frame {
+  display: block;
+  width: 100%;
+  height: clamp(340px, 68vh, 720px);
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+}

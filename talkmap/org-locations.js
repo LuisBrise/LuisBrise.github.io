@@ -15,7 +15,7 @@ var addressPoints = [
     -99.1858
   ],
   [
-    "Angular momentum transfer from swift electrons to small spheroidal nanoparticles in the dipole approximation<br />Microscopy & Microanalysis 2023, Minneapolis, MN, USA",
+    "Angular momentum transfer from swift electrons to small spheroidal nanoparticles in the dipole approximation<br />Microscopy &amp; Microanalysis 2023, Minneapolis, MN, USA",
     44.9778,
     -93.265
   ],
@@ -45,7 +45,7 @@ var addressPoints = [
     -103.3496
   ],
   [
-    "Rotating nanoparticles with electron beams: Impact of size, shape, and material<br />LXVI National Congress of Physics, Chihuahua, Mexico",
+    "Rotating nanoparticles with electron beams: Impact of size, shape, and material<br />LXVII National Congress of Physics, Chihuahua, Mexico",
     28.6353,
     -106.0889
   ],
@@ -55,12 +55,12 @@ var addressPoints = [
     -99.1858
   ],
   [
-    "Moment transfer with swift electrons to nanoparticles<br />1st Meeting of Graduate Students of the Physics Department, School of Science, UNAM, Mexico City, Mexico",
+    "Momentum transfer with swift electrons to nanoparticles<br />1st Meeting of Graduate Students of the Physics Department, School of Science, UNAM, Mexico City, Mexico",
     19.3261,
     -99.1808
   ],
   [
-    "Exploring Momentum Transfer in Electron Microscopy: Size and Material Effects on Nanoparticle Resonances<br />Microscopy & Microanalysis 2025, Salt Lake City, UT, USA",
+    "Exploring Momentum Transfer in Electron Microscopy: Size and Material Effects on Nanoparticle Resonances<br />Microscopy &amp; Microanalysis 2025, Salt Lake City, UT, USA",
     40.7608,
     -111.891
   ],
@@ -69,4 +69,14 @@ var addressPoints = [
     39.7392,
     -104.9903
   ],
+  [
+    "Linear momentum transfer from electrons to small nanoparticles: toward a quantum description using the multislice method<br />LXIX National Congress of Physics, Ensenada, Baja California, Mexico",
+    31.8659,
+    -116.603
+  ],
+  [
+    "Toward electron tweezers: theoretical and numerical study of momentum transfer from electrons to nanoparticles<br />LXIX National Congress of Physics, Ensenada, Baja California, Mexico",
+    31.8659,
+    -116.603
+  ]
 ];
