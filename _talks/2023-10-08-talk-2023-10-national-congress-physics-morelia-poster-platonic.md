@@ -11,7 +11,7 @@ duration_minutes: ''
 cv_id: talk-2023-10-national-congress-physics-morelia-poster-platonic
 selected: false
 ---
-**Authors:** Á. López-Tercero, 
+**Authors:** A. López-Tercero, 
 **J. Luis Briseño-Gómez**, Dr. José Ángel Castellanos Reyes, Dr. Alejandro Reyes-Coronado
 
 **Event:** LXVI National Congress of Physics

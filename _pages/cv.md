@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="{{ base_path }}/files/CV-github.pdf" class="btn btn--primary">Download CV (PDF)</a>
+
 Education
 ======
 - **Ph.D in Physical Sciences**  
@@ -69,8 +71,9 @@ Talks & Conference Contributions (Selected)
   
 Service and leadership
 ======
-- Organizer, *1st Meeting of Graduate Students of the Physics Department*, UNAM (2025)
-- Treasurer, OPTICA Student Chapter, UNAM
+- Co-organizer, 1st and 2nd *Encuentro Metropolitano de Óptica y Fotónica* (EMOF), 2025 and 2026
+- Co-organizer, *1st Meeting of Graduate Students of the Physics Department*, UNAM (2025)
+- OPTICA Student Chapter, UNAM: Member (2018–Present), Treasurer (2024–May 2026)
 
 Technical Skills 
 ======

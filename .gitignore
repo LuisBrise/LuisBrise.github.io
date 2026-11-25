@@ -8,3 +8,7 @@ vendor/
 node_modules/
 *.gem
 .DS_Store
+
+# CV sources hold private data; only files/CV-github.pdf is published
+/files/CV/
+/_site/files/CV/

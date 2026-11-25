@@ -1,5 +1,5 @@
 ---
-title: Moment transfer with swift electrons to nanoparticles
+title: Momentum transfer with swift electrons to nanoparticles
 collection: talks
 permalink: /talk/talk-2025-02-unam-grad-meeting-talk-10min/
 date: '2025-02-01'

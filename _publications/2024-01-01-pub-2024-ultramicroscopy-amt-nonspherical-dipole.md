@@ -26,4 +26,4 @@ selected: true
 
 **DOI:** 10.1016/j.ultramic.2024.114005
 
-J. L. Briseño-Gómez, A. López-Tercero, J. Á. Castellanos-Reyes, and A. Reyes-Coronado, “Angular momentum transfer from swift electrons to non-spherical nanoparticles within the dipolar approximation,” Ultramicroscopy, p. 114005 (2024). doi:10.1016/j.ultramic.2024.114005.
+J. L. Briseño-Gómez, A. López-Tercero, J. Á. Castellanos-Reyes, and A. Reyes-Coronado, “Angular momentum transfer from swift electrons to non-spherical nanoparticles within the dipolar approximation,” Ultramicroscopy 264, 114005 (2024). doi:10.1016/j.ultramic.2024.114005.

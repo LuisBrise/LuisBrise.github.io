@@ -1,14 +1,12 @@
 ---
-title: Hybrid real–reciprocal space pauli multislice simulations of electron beam
-  interactions with magnetic materials
+title: 'Efficient slice-wise propagation with electrostatic and magnetic phase gratings:
+  A forward dynamical electron scattering (FDES) implementation of Pauli multislice'
 collection: publications
 category: manuscript_in_preparation
 permalink: /publication/pub-2026-prep-pauli-multislice/
-excerpt: Manuscript in preparation on hybrid real/reciprocal-space Pauli multislice
-  simulations for magnetic materials, targeting efficient computation of magnetic
-  interactions and pathways toward magnon EELS applications.
+excerpt: Manuscript in preparation on an FDES implementation of Pauli multislice.
 date: '2026-01-01'
-venue: Manuscript in preparation
+venue: In preparation
 paperurl: ''
 type: manuscript_in_preparation
 doi: ''
@@ -19,8 +17,8 @@ selected: false
 **Authors:** 
 **J. Luis Briseño-Gómez**, Dr. José Ángel Castellanos Reyes, Dr. Jan Rusz
 
-**Venue:** Manuscript in preparation
+**Venue:** In preparation
 
 **Date:** 2026
 
-J. L. Briseño-Gómez, J. Á. Castellanos-Reyes, and J. Rusz, “Hybrid real–reciprocal space pauli multislice simulations of electron beam interactions with magnetic materials,” Manuscript in preparation (2026).
+J. L. Briseño-Gómez, J. Á. Castellanos-Reyes, and J. Rusz, “Efficient slice-wise propagation with electrostatic and magnetic phase gratings: A forward dynamical electron scattering (FDES) implementation of Pauli multislice,” in preparation (2026).

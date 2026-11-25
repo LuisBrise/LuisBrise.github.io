@@ -3,7 +3,7 @@ title: 'Rotating nanoparticles with electron beams: Impact of size, shape, and m
 collection: talks
 permalink: /talk/talk-2024-10-national-congress-physics-chihuahua-30min/
 date: '2024-10-06'
-venue: LXVI National Congress of Physics
+venue: LXVII National Congress of Physics
 location: Chihuahua, Mexico
 type: Talk
 invited: false
@@ -14,7 +14,7 @@ selected: false
 **Authors:** 
 **J. Luis Briseño-Gómez**, Dr. Alejandro Reyes-Coronado
 
-**Event:** LXVI National Congress of Physics
+**Event:** LXVII National Congress of Physics
 
 **Location:** Chihuahua, Mexico
 

@@ -3,7 +3,7 @@ title: 'Exploring Momentum Transfer in Electron Microscopy: Size and Material Ef
   on Nanoparticle Resonances'
 collection: talks
 permalink: /talk/talk-2025-07-micmic-poster/
-date: '2025-07-24'
+date: '2025-07-27'
 venue: Microscopy & Microanalysis 2025
 location: Salt Lake City, UT, USA
 type: Poster
