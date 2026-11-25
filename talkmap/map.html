@@ -1,5 +1,9 @@
-
-    <!DOCTYPE html>
+---
+layout: null
+permalink: /talkmap/map.html
+sitemap: false
+---
+<!DOCTYPE html>
     <html>
     <head>
     	<meta charset="utf-8">
@@ -8,12 +12,12 @@
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" href="leaflet_dist/screen.css" />
+    	<link rel="stylesheet" href="leaflet_dist/screen.css?v={{ site.time | date: '%s' }}" />
 
     	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
     	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.Default.css" />
     	<script src="leaflet_dist/leaflet.markercluster-src.js"></script>
-    	<script src="org-locations.js"></script>
+    	<script src="org-locations.js?v={{ site.time | date: '%s' }}"></script>
 
     </head>
     <body>
@@ -22,10 +26,11 @@
     	<script type="text/javascript">
     		var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
               maxZoom: 18,
+              minZoom: 1,
               attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
                     }),
     			latlng = L.latLng(30, 10);
-    		var map = L.map('map', {center: latlng, zoom: 0.7, layers: [tiles]});
+    		var map = L.map('map', {center: latlng, zoom: 1, layers: [tiles]});
     		var markers = L.markerClusterGroup({
     			showCoverageOnHover: false,
     			maxClusterRadius: 80
@@ -38,7 +43,22 @@
     			markers.addLayer(marker);
     		}
     		map.addLayer(markers);
-    		map.fitBounds(markers.getBounds(), {padding: [40, 40], maxZoom: 6});
+    		// Fit the markers, and fit again whenever the frame changes size (it may
+    		// still be unstyled when the map starts), until the visitor moves the map.
+    		var touched = false;
+    		['mousedown', 'wheel', 'touchstart', 'keydown'].forEach(function (e) {
+    			document.getElementById('map').addEventListener(e, function () { touched = true; }, true);
+    		});
+    		function fit() {
+    			var el = document.getElementById('map');
+    			if (touched || !el.clientWidth || !el.clientHeight) { return; }
+    			map.invalidateSize({animate: false, pan: false});
+    			map.fitBounds(markers.getBounds(), {padding: [30, 30], maxZoom: 6, animate: false});
+    		}
+    		fit();
+    		window.addEventListener('load', fit);
+    		window.addEventListener('resize', fit);
+    		if (window.ResizeObserver) { new ResizeObserver(fit).observe(document.getElementById('map')); }
     	</script>
     </body>
     </html>

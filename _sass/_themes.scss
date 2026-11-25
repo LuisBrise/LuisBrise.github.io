@@ -47,7 +47,9 @@ $caption-font-family        : $serif;
    Breakpoints
    ========================================================================== */
 
-@include breakpoint-set("to ems", true);
+// Pixels, not ems: the page font size is fixed in pixels, and em breakpoints
+// shift with the browser's own font size setting (the page stayed narrow).
+@include breakpoint-set("to ems", false);
 
 $small                      : 600px !default;
 $medium                     : 768px !default;
